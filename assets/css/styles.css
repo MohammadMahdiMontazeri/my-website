@@ -117,3 +117,33 @@ h2{font-size:clamp(20px,3vw,28px); font-weight:800}
   .topnav{display:none}
   .tabs{gap:20px}
 }
+
+:root {
+  --ref-w: 1440;
+  --ref-h: 900;
+}
+
+:root {
+  --vwScale: calc(100vw / var(--ref-w));
+  --vhScale: calc(100vh / var(--ref-h));
+  --scale: min(var(--vwScale), var(--vhScale));
+}
+
+html { height: 100%; }
+
+body {
+  margin: 0;
+  transform-origin: top left;
+  width: calc(var(--ref-w) * 1px);
+  height: calc(var(--ref-h) * 1px);
+  transform: scale(var(--scale));
+}
+
+@media (max-width: 768px) {
+  :root {
+    --ref-w: 390;
+    --ref-h: 800;
+  }
+}
+
+html { display: grid; place-items: center; }

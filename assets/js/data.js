@@ -1,7 +1,7 @@
 // All content is editable here; HTML updates automatically.
 window.SITE = {
   name: "MohammadMahdi Montazeri Hedesh",
-role: "Undergraduate Student (B.Sc.) at Sharif University of Technology\nMajor: Industrial Engineering | Minor: Economics",
+  role: "Undergraduate Student (B.Sc.) at Sharif University of Technology\nMajor: Industrial Engineering | Minor: Economics",
   email: "mohammad.montazeri82@sharif.edu",
   phone: "+98 990 127 9113",
   linkedin: "https://linkedin.com/in/m-montazeri",
